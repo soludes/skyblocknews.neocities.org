@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This helps with making the website responsive-->
+    <title>Skyblock News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+  </head>
+  <body>
+    <header><img id="logo" src="images/logo.png" alt="logo"></header>
+    <div id="row"> <!--This div organises the most recent and other articles into rows-->
+      <div id="vl"></div> <!--This div creates a vertical line in the middle of the webpage-->
+      <div class="column">
+         <!--This is the code for the most recent section-->
+        <h1 id="mr-label">Most Recent:</h1>
+        <div id="mr-container">
+          <div id="image-cropper-mr">
+            <a href="most-recent.html">
+            <img
+              id="mr-img"
+              src="images/vincent-artists-abode.jpg"
+              alt="image of vincent (npc)"
+            >
+            </a>
+          </div>
+          <a href="most-recent.html">
+          <h1 id="mr-title">
+            August 8th | Artist's Abode:
+          </h1>
+          </a>
+        </div>
+        <p id="mr-article">
+          Skyblock finally updated to add a bunch of new dyes, and an accessory.
+          Yes, this means there is still no foraging update. <br>
+          "Welcome to Hypixel SkyBlock Patch 0.20.5! As of today, Marco is no
+          longer the Village’s only resident artist, with Vincent having moved
+          into the Artist’s Abode!"
+          <a id="mr-readmore" href="most-recent.html">Read More...</a>
+        </p>
+      </div>
+      <div class="column">
+         <!--This is the code for the other articles-->
+        <div class="article">
+          <div class="img-cropper">
+            <a href="most-recent.html">
+            <img
+              class="article-img"
+              src="images/bazaarnpc.jpg"
+              alt="image of the bazaar npc"
+            >
+            </a>
+          </div>
+          <a class="article-link" href="article1.html"
+            >09/07/24 | Bazaar Update</a
+          >
+        </div>
+        <div class="article">
+          <div class="img-cropper">
+            <a href="article1.html">
+            <img
+              class="article-img"
+              src="images/scorpiusmayor.jpg"
+              alt="image of a skyblock mayor"
+            >
+            </a>
+          </div>
+          <a class="article-link" href="article2.html"
+            >02/07/24 | Better Mayors</a
+          >
+        </div>
+        <div class="article">
+          <div class="img-cropper">
+            <a href="article3.html">
+            <img
+              class="article-img"
+              src="images/choco-egg.png"
+              alt="image of the bazaar npc"
+            >
+          </a>
+          </div>
+          <a class="article-link" href="article3.html"
+            >28/05/24 | Choco Factory</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
