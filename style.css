@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+body {
+  background-image: url("../images/article-bg.jpg");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  background-color: rgb(30, 32, 25)
+}
+@media only screen and (min-width: 500px) { /*This makes the header dissapear when the screen is to small to display it correctly */
+  header {
+    width: 100%;
+    height: 25vh;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(30, 32, 25);
+    position: relative;
+  }
+}
+
+/* This lays out the page below the header */
+@media only screen and (min-width: 1200px) {
+  #row {
+  display: flex;
+  background-color: rgb(30, 32, 25);
+  min-height: 75vh;
+  color: rgb(230, 231, 232);
+  text-align: center;
+  /*overflow: scroll;   this would add a scroll bar
+     for more articles if needed in the future*/
+  }
+
+  .column {
+    flex: 50%;
+    min-height: 75vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(30, 32, 25)
+  }
+}
+/*This makes a line to seperate the articles if you have a bigger screen (1450px) */
+@media only screen and (min-width: 1450px) {
+  #vl {
+    border-left: 0.6vw solid rgb(230, 231, 232);
+    height: 75vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
+  }
+}
+ /* This makes it so the images are only circular on a screen larger than 570px, as they break when its lower than that */
+@media only screen and (min-width: 570px) {
+  #mr-img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -40%;
+    height: 100%;
+    width: auto;
+  }
+  
+  #image-cropper-mr {
+    max-width: 17.5vw;
+    max-height: 35vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px 10px 10px 65px;
+  }
+  .img-cropper {
+    max-width: 9vw;
+    max-height: 18vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+  
+  .article-img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -35%;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.article {
+  text-align: center;
+  height: 32%;
+  display: flex;
+  flex-direction: row;
+}
+
+#mr-container { /*mr stands for most recent*/
+  display: flex;
+  flex-direction: row;
+}
+
+#mr-label {
+  font-size: 11vh;
+  font-weight: bold;
+  margin: 0;
+  padding: 3%;
+  display: block;
+  font-family: "League Spartan";
+}
+
+#mr-title {
+  color: rgb(230, 231, 232);
+  font-size: 8vh;
+  margin-left: 3%;
+  margin-top: 9vh;
+  display: block;
+  font-family: "League Spartan";
+}
+
+#mr-article {
+  color: rgb(230, 231, 232);
+  font-size: 3.5vh;
+  margin: 1% 1% 0 10%;
+  text-align: center;
+  padding: 0;
+  font-family: "Jersey 10";
+}
+
+h1 {
+  color: rgb(230, 231, 232);
+}
+
+.article-link {
+  margin-left: 4vw;
+  margin-top: 9.5vh;
+  font-size: 5.5vh;
+  font-family: "League Spartan";
+  color: rgb(230, 231, 232);
+  font-weight: bold;
+}
+
+#mr-readmore {
+  color: rgb(230, 231, 232);
+  font-size: 3.5vh;
+}
+
+#mr-readmore:hover {
+  color: palegoldenrod;
+}
+
+.article-link:hover {
+  color: palegoldenrod;
+}
+
+a {
+  text-decoration: none; 
+}
+
+#mr-title:hover {
+  color: palegoldenrod;
+}
+
+/* Styling for most-recent.html/the other articles starts here */
+
+.wrapper {
+  width: 60%;
+  background-color: rgb(30, 32, 25);
+  display: block;
+  margin: auto;
+  height: 75vh;
+  overflow: auto;
+  text-align: center;
+}
+
+p {
+  color: rgb(230, 231, 232);
+  padding: 0 10% 10% 10%;
+  font-size: 4vh;
+  font-family: "Jersey 10";
+}
+
+.home {
+  color: rgb(230, 231, 232);
+  margin-left: 2%;
+}
+
+.home-img {
+  border-radius: 30%;
+  margin-top: 2.5vh;
+}
+
+img {
+  height: 20vh;
+}
+
+.article-title {
+  text-decoration: underline;
+  font-family: "League Spartan";
+  font-size: 5vh;
+}
+
+.article-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+#logo { /*logo is seperate to the header, so it is more responsive on smaller devices*/
+  min-width: 10vw;
+  min-height: 20vh;
+  margin-left: 45vw;
+  margin-top: 3vh;
+  display: inline;
+}
+
+.article-logo {
+  margin-left: 30vw;
+}
